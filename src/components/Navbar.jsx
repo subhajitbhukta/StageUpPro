@@ -13,7 +13,7 @@ const Navbar = ({ scrolled, activeSection, scrollToSection, onEnrollClick }) => 
           <div className="flex items-center space-x-3">
             <div className="relative group cursor-pointer">
               <div className="flex items-center space-x-3">
-                <img src={logo} alt="StageUp Pro" className="h-16 w-16 w-auto" />
+                <img src={logo} alt="StageUp Pro" className="h-16  w-auto" />
               </div>
             </div>
           </div>
