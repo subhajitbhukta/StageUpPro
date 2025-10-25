@@ -664,16 +664,8 @@ export default function App() {
       <footer className="bg-gray-900 text-gray-300 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="relative">
-                  <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-3 shadow-lg">
-                    <Code className="text-white" size={28} />
-                  </div>
-                </div>
-                <span className="text-xl font-bold text-white">StageUp Pro</span>
-              </div>
-              <p className="text-sm">Empowering future developers with industry-leading education and certification.</p>
+            <div className="flex items-center space-x-3">
+              <img src={logo} alt="StageUp Pro" className="h-16 w-16 w-auto" />
             </div>
             <div>
               <h4 className="font-bold text-white mb-4">Quick Links</h4>
