@@ -13,21 +13,21 @@ const AboutSection = () => {
     {
       name: 'LakshmiKanta Patra',
       role: 'Full Stack Developer',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop',
+      image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png',
       text: 'StageUp Pro gave me the exact skills that industry actually wants. The mentors here genuinely guide you like family — they clearly say what is bad and what is good. I became confident and job-ready.',
       // rating: 4.8
     },
     {
       name: 'Abhijit Debnath',
       role: 'Node.Js Developer',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop',
+      image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png',
       text: 'Here learning is fully practical. They don’t just “teach syllabus”, they push you to build real projects. This helped me start my career faster than I expected. Real mentors, real learning.',
       // rating: 5
     },
     {
       name: 'Medhashis Maity',
       role: 'Software Developer',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop',
+      image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png',
       text: 'What I loved most is the honesty — mentors tell the truth. If something is wrong, they say it directly without sugarcoat. That feedback changed my skill level completely. Perfect place to start your journey.',
       // rating: 5
     }
