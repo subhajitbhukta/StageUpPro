@@ -25,14 +25,14 @@ const IntroAnimation = ({ onComplete, onPlatformSelect }) => {
       name: 'ADV StageUp',
       icon: '🎯',
       description: 'Advanced Skill Development',
-      link: "adv"
+      link: "https://stageuppro.netlify.app/adv"
     },
     {
       id: 'pro',
       name: 'Pro StageUp',
       icon: '💼',
       description: 'Professional Growth & Development',
-      link: "pro"
+      link: "https://stageuppro.netlify.app/pro"
     }
   ];
 
