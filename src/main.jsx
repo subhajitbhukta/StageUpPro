@@ -1,18 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
-import { AppWithIntro } from './components/IntroAnimation.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppWithIntro
-      components={{
-        pro: <App />,
-        // kids: <KidsApp />,
-        // school: <SchoolApp />,
-        adv: <App />
-      }}
-    />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 )

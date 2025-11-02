@@ -25,14 +25,14 @@ const IntroAnimation = ({ onComplete, onPlatformSelect }) => {
       name: 'ADV StageUp',
       icon: '🎯',
       description: 'Advanced Skill Development',
-      link: null
+      link: "adv"
     },
     {
       id: 'pro',
       name: 'Pro StageUp',
       icon: '💼',
       description: 'Professional Growth & Development',
-      link: null
+      link: "pro"
     }
   ];
 
@@ -301,23 +301,3 @@ export const AppWithIntro = ({ children, components }) => {
   return children;
 };
 
-// Demo App component
-const DemoApp = () => {
-  return (
-    <div className="min-h-screen bg-white flex items-center justify-center">
-      <div className="text-center max-w-2xl px-6">
-        <h1 className="text-4xl font-semibold text-gray-900 mb-4">Welcome to Pro StageUp</h1>
-        <p className="text-gray-600 text-lg">Your professional learning journey starts here</p>
-      </div>
-    </div>
-  );
-};
-
-// Export the wrapped version
-export default function App() {
-  return (
-    <AppWithIntro>
-      <DemoApp />
-    </AppWithIntro>
-  );
-}
