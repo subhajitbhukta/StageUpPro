@@ -3,12 +3,12 @@ import { Code, TrendingUp, Globe, Briefcase, Award, Users, Star, CheckCircle } f
 // Courses Section Component
 const CoursesSection = () => {
   const courses = [
-    { title: 'Full Stack Development', duration: '6 Months', level: 'Advanced', students: '2.5k+', icon: Code, price: '₹49,999' },
-    { title: 'Data Science & AI', duration: '5 Months', level: 'Intermediate', students: '1.8k+', icon: TrendingUp, price: '₹44,999' },
-    { title: 'Web Development', duration: '4 Months', level: 'Beginner', students: '3.2k+', icon: Globe, price: '₹34,999' },
-    { title: 'Mobile App Development', duration: '5 Months', level: 'Intermediate', students: '1.5k+', icon: Code, price: '₹39,999' },
-    { title: 'DevOps & Cloud', duration: '4 Months', level: 'Advanced', students: '1.2k+', icon: Briefcase, price: '₹42,999' },
-    { title: 'Cybersecurity', duration: '6 Months', level: 'Advanced', students: '980+', icon: Award, price: '₹54,999' }
+    { title: 'Full Stack Development using PHP and MySQL', duration: '30 to 40 Hours (2/3/4/6/8 Weeks) ', students: '2.5k+', icon: Code, price: '₹15,500' },
+    { title: 'Full Stack Development using PHP with Laravel', duration: '30 to 40 Hours (2/3/4/6/8 Weeks) ', students: '2.5k+', icon: Code, price: '₹15,800' },
+    { title: 'Full Stack Development using MERN', duration: '30 to 40 Hours (2/3/4/6/8 Weeks) ', students: '2.5k+', icon: Code, price: '₹16,100' },
+    { title: 'Data Science & AI', duration: '30 to 40 Hours (2/3/4/6/8 Weeks) ', students: '1.8k+', icon: TrendingUp, price: '₹18,600' },
+    { title: 'Mobile App Development', duration: '30 to 40 Hours (2/3/4/6/8 Weeks) ',  students: '1.5k+', icon: Code, price: '₹14,800' },
+    { title: 'DevOps & Cloud', duration: '30 to 40 Hours (2/3/4/6/8 Weeks) ', students: '1.2k+', icon: Briefcase, price: '₹16,100' },
   ];
 
   return (
@@ -21,16 +21,16 @@ const CoursesSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, idx) => (
             <div key={idx} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-              <div className="bg-gradient-to-br from-green-400 via-blue-500 to-orange-500 p-6 text-white">
+              <div className="bg-orange-500/80 p-6 text-white">
                 <course.icon size={40} className="mb-4" />
                 <h3 className="text-2xl font-bold mb-2">{course.title}</h3>
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="bg-white/20 px-3 py-1 rounded-full text-sm">{course.duration}</span>
-                  <span className="bg-white/20 px-3 py-1 rounded-full text-sm">{course.level}</span>
+                  {/* <span className="bg-white/20 px-3 py-1 rounded-full text-sm">{course.level}</span> */}
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
+                {/* <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2 text-gray-600">
                     <Users size={18} />
                     <span className="text-sm">{course.students} enrolled</span>
@@ -39,7 +39,7 @@ const CoursesSection = () => {
                     <Star size={18} fill="currentColor" />
                     <span className="font-semibold">4.8</span>
                   </div>
-                </div>
+                </div> */}
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start gap-2 text-gray-600">
                     <CheckCircle size={18} className="text-green-500 mt-0.5 flex-shrink-0" />

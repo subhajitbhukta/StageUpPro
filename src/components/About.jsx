@@ -4,40 +4,41 @@ import { Award, Users, Briefcase, BookOpen, Star, Quote, Building2 } from 'lucid
 const AboutSection = () => {
   const features = [
     { icon: Award, title: 'ISO Certified', desc: 'Internationally recognized certification' },
-    { icon: Users, title: '10+ Years Experience', desc: 'Trusted by thousands of students' },
+    { icon: Users, title: '3+ Years Experience', desc: 'Trusted by ambitious learners' },
     { icon: Briefcase, title: 'Real Projects', desc: 'Work on live industry projects' },
     { icon: BookOpen, title: 'Expert Mentors', desc: 'Learn from industry professionals' }
   ];
 
   const testimonials = [
     {
-      name: 'Rahul Sharma',
-      role: 'Software Engineer at Google',
+      name: 'LakshmiKanta Patra',
+      role: 'Full Stack Developer',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop',
-      text: 'StageUp Pro transformed my career completely. The hands-on projects and expert mentorship helped me land my dream job at Google. Best decision ever!',
-      rating: 5
+      text: 'StageUp Pro gave me the exact skills that industry actually wants. The mentors here genuinely guide you like family — they clearly say what is bad and what is good. I became confident and job-ready.',
+      // rating: 4.8
     },
     {
-      name: 'Priya Patel',
-      role: 'Full Stack Developer at Amazon',
+      name: 'Abhijit Debnath',
+      role: 'Node.Js Developer',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop',
-      text: 'The quality of education and placement support is outstanding. I got placed in Amazon within 2 months of completing my course. Highly recommended!',
-      rating: 5
+      text: 'Here learning is fully practical. They don’t just “teach syllabus”, they push you to build real projects. This helped me start my career faster than I expected. Real mentors, real learning.',
+      // rating: 5
     },
     {
-      name: 'Amit Kumar',
-      role: 'Data Scientist at Microsoft',
+      name: 'Medhashis Maity',
+      role: 'Software Developer',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop',
-      text: 'The Data Science course here is absolutely world-class. Real projects, industry experts, and excellent career guidance made all the difference.',
-      rating: 5
+      text: 'What I loved most is the honesty — mentors tell the truth. If something is wrong, they say it directly without sugarcoat. That feedback changed my skill level completely. Perfect place to start your journey.',
+      // rating: 5
     }
   ];
 
+
   const placements = [
-    { name: 'Rahul Sharma', company: 'Google', logo: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png', package: '₹18 LPA', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop' },
-    { name: 'Priya Patel', company: 'Amazon', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', package: '₹16 LPA', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop' },
-    { name: 'Amit Kumar', company: 'Microsoft', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg', package: '₹20 LPA', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop' },
-    { name: 'Sneha Reddy', company: 'Flipkart', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Flipkart-logo.png', package: '₹14 LPA', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop' }
+    { name: 'Abhijit Debnath', company: 'Web Skitters', logo: 'https://www.webskitters.com/wp-content/uploads/2025/02/WTS-LOGO-COLOR-01-3.png', package: '₹3.6 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' },
+    { name: 'LakshmiKanta Patra', company: 'Vxplore Technologies', logo: 'https://www.topdevelopers.co/upload/20231205073153737598876.png', package: '₹4 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' },
+    { name: 'Medhashis Maity', company: 'Aarushi Infotech', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrid2HbRdLFlr6hP0hm1LjIag2BZddIaBUkQ&s', package: '₹3.6 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' },
+    { name: 'User', company: 'Company', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Flipkart-logo.png', package: '₹4 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' }
   ];
 
   return (
@@ -51,7 +52,7 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, idx) => (
               <div key={idx} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
-                <div className="bg-gradient-to-br from-green-400 via-blue-400 to-orange-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-4 shadow-lg">
+                <div className="bg-orange-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-4 shadow-lg">
                   <feature.icon className="text-white" size={32} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
@@ -78,11 +79,11 @@ const AboutSection = () => {
                     <p className="text-sm text-orange-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <div className="flex gap-1 mb-4">
+                {/* <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} size={18} className="text-orange-500" fill="currentColor" />
                   ))}
-                </div>
+                </div> */}
                 <Quote className="text-orange-200 mb-2" size={32} />
                 <p className="text-gray-700 italic leading-relaxed">{testimonial.text}</p>
               </div>

@@ -23,12 +23,12 @@ const EnrollmentForm = ({ showForm, onClose }) => {
   };
 
    const courses = [
-    { title: 'Full Stack Development', duration: '6 Months', level: 'Advanced', students: '2.5k+', icon: Code, price: '₹49,999' },
-    { title: 'Data Science & AI', duration: '5 Months', level: 'Intermediate', students: '1.8k+', icon: TrendingUp, price: '₹44,999' },
-    { title: 'Web Development', duration: '4 Months', level: 'Beginner', students: '3.2k+', icon: Globe, price: '₹34,999' },
-    { title: 'Mobile App Development', duration: '5 Months', level: 'Intermediate', students: '1.5k+', icon: Code, price: '₹39,999' },
-    { title: 'DevOps & Cloud', duration: '4 Months', level: 'Advanced', students: '1.2k+', icon: Briefcase, price: '₹42,999' },
-    { title: 'Cybersecurity', duration: '6 Months', level: 'Advanced', students: '980+', icon: Award, price: '₹54,999' }
+    { title: 'Full Stack Development using PHP and MySQL', duration: '30 to 40 Hours', level: 'Advanced', students: '2.5k+', icon: Code, price: '₹49,999' },
+    { title: 'Full Stack Development using PHP with Laravel', duration: '30 to 40 Hours', level: 'Intermediate', students: '1.8k+', icon: TrendingUp, price: '₹44,999' },
+    { title: 'Full Stack Development using MERN', duration: '30 to 40 Hours', level: 'Beginner', students: '3.2k+', icon: Globe, price: '₹34,999' },
+    { title: 'Data Science & AI', duration: '30 to 40 Hours', level: 'Intermediate', students: '1.5k+', icon: Code, price: '₹39,999' },
+    { title: 'Mobile App Development', duration: '30 to 40 Hours', level: 'Advanced', students: '1.2k+', icon: Briefcase, price: '₹42,999' },
+    // { title: 'Cybersecurity', duration: '6 Months', level: 'Advanced', students: '980+', icon: Award, price: '₹54,999' }
   ];
 
   if (!showForm) return null;

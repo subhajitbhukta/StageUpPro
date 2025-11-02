@@ -9,13 +9,13 @@ const HeroSection = ({ onEnrollClick, scrollToSection }) => {
     {
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop',
       title: 'Master Coding, Build Your Future',
-      subtitle: 'Join 5000+ students who transformed their careers with our industry-recognized certification courses',
+      subtitle: 'Trusted by 100+ students — learn job-ready skills, get industry certification, and accelerate your hiring chances.',
       badge: 'ISO Certified Institute 🏆'
     },
     {
       image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&h=600&fit=crop',
       title: 'Learn From Industry Experts',
-      subtitle: '10+ years of excellence in tech education with 95% placement rate',
+      subtitle: '3+ years of excellence in tech education — practical, project-based learning with real mentors.',
       badge: 'Expert Mentors 👨‍🏫'
     },
     {
@@ -36,12 +36,13 @@ const HeroSection = ({ onEnrollClick, scrollToSection }) => {
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
 
-  const stats = [
-    { value: '5000+', label: 'Students Trained' },
-    { value: '95%', label: 'Placement Rate' },
-    { value: '50+', label: 'Expert Mentors' },
-    { value: '200+', label: 'Partner Companies' }
-  ];
+const stats = [
+  { value: 'Project Based Learning', label: '' },
+  { value: 'One to One Mentorship', label: '' },
+  { value: 'Practice with real apps', label: '' },
+  { value: 'Build Job Ready Skills', label: '' }
+];
+
 
   return (
     <>
@@ -118,13 +119,13 @@ const HeroSection = ({ onEnrollClick, scrollToSection }) => {
         </div>
       </section>
 
-      <section className="py-8 bg-gradient-to-r from-green-500 via-blue-500 to-orange-500">
+      <section className="py-4 bg-orange-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center transform hover:scale-110 transition-transform">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-white/90 font-medium">{stat.label}</div>
+                <div className="text-md font-bold text-white ">{stat.value}</div>
+                {/* <div className="text-white/90 font-medium">{stat.label}</div> */}
               </div>
             ))}
           </div>

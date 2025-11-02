@@ -22,9 +22,9 @@ const Footer = ({ scrollToSection }) => {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Visit Us</h4>
-                      <p className="text-gray-700">StageUp Pro</p>
-                      <p className="text-gray-700">Singur, West Bengal, India</p>
-                      <p className="text-gray-700">PIN: 712409</p>
+                      <p className="text-gray-700">StageUp</p>
+                      <p className="text-gray-700">Singur,Mankundu, West Bengal, India</p>
+                      <p className="text-gray-700">PIN: 712409 ,712139</p>
                     </div>
                   </div>
 
@@ -34,8 +34,9 @@ const Footer = ({ scrollToSection }) => {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Call Us</h4>
-                      <p className="text-gray-700">+91 1234567890</p>
-                      <p className="text-gray-700">+91 0987654321</p>
+                      <span className="text-gray-700">+91 9123378405 , </span>
+                      <span className="text-gray-700">+91 9681456344</span>
+                      <p className="text-gray-700">+91 9804325454</p>
                     </div>
                   </div>
 
@@ -45,8 +46,8 @@ const Footer = ({ scrollToSection }) => {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Email Us</h4>
-                      <p className="text-gray-700">info@stageuppro.com</p>
-                      <p className="text-gray-700">admissions@stageuppro.com</p>
+                      <p className="text-gray-700"> letsstageupnow@gmail.com</p>
+                      {/* <p className="text-gray-700">admissions@stageuppro.com</p> */}
                     </div>
                   </div>
 
@@ -67,15 +68,16 @@ const Footer = ({ scrollToSection }) => {
             <div className="space-y-6">
               <div className="bg-white rounded-3xl shadow-xl overflow-hidden h-[600px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58937.71158638539!2d88.1706117!3d22.8118518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f883b54e4903df%3A0x4a5288288b2e9b4e!2sSingur%2C%20West%20Bengal%20712109!5e0!3m2!1sen!2sin!4v1735081788123!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58898.3275307223!2d88.2673864!3d22.829177800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f464b84fd9b%3A0x8b4e00126ae33aa1!2sMankundu%2C%20West%20Bengal%20712139!5e0!3m2!1sen!2sin!4v1735085412223!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="StageUp Pro Location - Singur"
+                  title="StageUp Pro Location - Mankundu"
                 />
+
               </div>
             </div>
           </div>
@@ -119,8 +121,8 @@ const Footer = ({ scrollToSection }) => {
               <ul className="space-y-2 text-sm">
                 <li><button onClick={() => scrollToSection('about')} className="hover:text-orange-500 transition-colors">About Us</button></li>
                 <li><button onClick={() => scrollToSection('courses')} className="hover:text-orange-500 transition-colors">Courses</button></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Internships</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Placements</a></li>
+                {/* <li><a href="#" className="hover:text-orange-500 transition-colors">Internships</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Placements</a></li> */}
               </ul>
             </div>
             <div>
@@ -135,9 +137,9 @@ const Footer = ({ scrollToSection }) => {
             <div>
               <h4 className="font-bold text-white mb-4">Contact</h4>
               <ul className="space-y-2 text-sm">
-                <li>Email: info@stageuppro.com</li>
-                <li>Phone: +91 1234567890</li>
-                <li>Location: Singur, West Bengal, India</li>
+                <li>Email:  letsstageupnow@gmail.com</li>
+                <li>Phone: +91 9681456344 / +91 9123378405</li>
+                <li>Location: Singur , Mankundu West Bengal, India</li>
               </ul>
             </div>
           </div>
