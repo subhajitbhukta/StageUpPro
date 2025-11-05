@@ -36,7 +36,6 @@ const CoursesSection = () => {
     'Perfect for Beginners',
     'Short Duration & Focused Learning',
     'Affordable Entry Point',
-    'Foundation for Advanced Courses',
     'Hands-on Practice Sessions',
     'Certificate of Completion'
   ];
@@ -45,19 +44,24 @@ const CoursesSection = () => {
     'Flexible Learning Schedule',
     'Individual Attention & Mentorship',
     'Career Guidance & Resume Building',
+    'Mock Interviews',
     'Industry Certification',
-    'Portfolio Development Support'
+    'Portfolio Development Support',
+    'Live Project Based Training',
   ];
+
 
   const industrialFeatures = [
     'Customized Corporate Training',
     'On-site/Online Training Options',
-    'Bulk Enrollment Discounts',
     'Dedicated Training Manager',
+    'Skill Gap Analysis & Improvement plan',
     'Post-training Technical Support',
     'Industry-specific Case Studies',
     'Team Collaboration Projects',
-    'Performance Analytics & Reports'
+    'Performance Analytics & Reports',
+    'Placement Assistance Support',
+
   ];
 
 
