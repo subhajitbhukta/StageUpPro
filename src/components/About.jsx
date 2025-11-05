@@ -1,4 +1,6 @@
 import { Award, Users, Briefcase, BookOpen, Star, Quote, Building2 } from 'lucide-react';
+import img1 from '../assets/las.png';
+import img2 from '../assets/med.jpeg';
 
 // About Section Component
 const AboutSection = () => {
@@ -36,8 +38,8 @@ const AboutSection = () => {
 
   const placements = [
     { name: 'Abhijit Debnath', company: 'Web Skitters', logo: 'https://www.webskitters.com/wp-content/uploads/2025/02/WTS-LOGO-COLOR-01-3.png', package: '₹3.6 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' },
-    { name: 'LakshmiKanta Patra', company: 'Vxplore Technologies', logo: 'https://www.topdevelopers.co/upload/20231205073153737598876.png', package: '₹4 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' },
-    { name: 'Medhashis Maity', company: 'Aarushi Infotech', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrid2HbRdLFlr6hP0hm1LjIag2BZddIaBUkQ&s', package: '₹3.6 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' },
+    { name: 'LakshmiKanta Patra', company: 'Vxplore Technologies', logo: 'https://www.topdevelopers.co/upload/20231205073153737598876.png', package: '₹4 LPA', image:img1 },
+    { name: 'Medhashis Maity', company: 'Aarushi Infotech', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrid2HbRdLFlr6hP0hm1LjIag2BZddIaBUkQ&s', package: '₹3.6 LPA', image: img2 },
     { name: 'User', company: 'Company', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Flipkart-logo.png', package: '₹4 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' }
   ];
 
