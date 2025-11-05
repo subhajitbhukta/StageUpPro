@@ -5,32 +5,34 @@ import { useState } from 'react';
 const CoursesSection = () => {
   const [activeTab, setActiveTab] = useState('bridge');
 
+  const bridgeCourses = [
+    { title: 'HTML & CSS Fundamentals (Responsive Design) ', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '3.2k+', icon: Code, price: '₹3,500', maxFee: '₹6,000' },
+    { title: 'Full Stack Development using Laravel with MySQL', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '2.8k+', icon: Code, price: '₹4,200', maxFee: '₹7,000' },
+    { title: 'Python Programming Foundation', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '3.0k+', icon: Code, price: '₹4,500', maxFee: '₹7,500' },
+    { title: 'Full Stack Development using MERN', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '2.2k+', icon: Code, price: '₹3,000', maxFee: '₹8,000' },
+    { title: 'Git & GitHub Essentials', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '2.5k+', icon: TrendingUp, price: '₹2,800', maxFee: '₹6,000' },
+    { title: 'UI/UX Design Introduction', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '2.0k+', icon: Briefcase, price: '₹5,200', maxFee: '₹9,000' },
+  ];
+
   const professionalCourses = [
-    { title: 'Responsive Web Design Essentials', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹7,500', maxFee: '₹12,000' },
-    { title: 'Full Stack Development using Laravel with MySQL', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹15,800', maxFee: '₹25,000' },
-    { title: 'Full Stack Development using MERN', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹16,100', maxFee: '₹26,000' },
-    { title: 'Data Science & AI', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '1.8k+', icon: TrendingUp, price: '₹18,600', maxFee: '₹30,000' },
-    { title: 'Mobile App Development', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '1.5k+', icon: Code, price: '₹14,800', maxFee: '₹24,000' },
-    { title: 'DevOps & Cloud', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '1.2k+', icon: Briefcase, price: '₹16,100', maxFee: '₹26,000' },
+    { title: 'Responsive Web Design Essentials', duration: '35 to 45 Hours (2/3/4/6/8 Weeks) ', students: '2.5k+', icon: Code, price: '₹7,500', maxFee: '₹12,000' },
+    { title: 'Full Stack Development using Laravel with MySQL', duration: '35 to 45 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹15,800', maxFee: '₹25,000' },
+    { title: 'Full Stack Development using MERN', duration: '35 to 45 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹16,100', maxFee: '₹26,000' },
+    { title: 'Data Science & AI', duration: '35 to 45 Hours (2/3/4/6/8 Weeks)', students: '1.8k+', icon: TrendingUp, price: '₹18,600', maxFee: '₹30,000' },
+    { title: 'Mobile App Development', duration: '35 to 45 Hours (2/3/4/6/8 Weeks)', students: '1.5k+', icon: Code, price: '₹14,800', maxFee: '₹24,000' },
+    { title: 'DevOps & Cloud', duration: '35 to 45 Hours (2/3/4/6/8 Weeks)', students: '1.2k+', icon: Briefcase, price: '₹16,100', maxFee: '₹26,000' },
   ];
 
   const industrialCourses = [
-    { title: 'Responsive Web Design Essentials', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹8,500', maxFee: '₹15,000' },
-    { title: 'Full Stack Development using Laravel with MySQL', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹18,000', maxFee: '₹30,000' },
-    { title: 'Full Stack Development using MERN', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '2.5k+', icon: Code, price: '₹18,500', maxFee: '₹32,000' },
-    { title: 'Data Science & AI', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '1.8k+', icon: TrendingUp, price: '₹21,000', maxFee: '₹38,000' },
-    { title: 'Mobile App Development', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '1.5k+', icon: Code, price: '₹17,000', maxFee: '₹30,000' },
-    { title: 'DevOps & Cloud', duration: '30 to 40 Hours (2/3/4/6/8 Weeks)', students: '1.2k+', icon: Briefcase, price: '₹18,500', maxFee: '₹32,000' },
+    { title: 'Responsive Web Design Essentials', duration: '60 to 70 Hours (2/3/4/6/8/9/10/11/12 Weeks)', students: '2.5k+', icon: Code, price: '₹8,500', maxFee: '₹15,000' },
+    { title: 'Full Stack Development using Laravel with MySQL', duration: '60 to 70 Hours (2/3/4/6/8/9/10/11/12 Weeks)', students: '2.5k+', icon: Code, price: '₹18,000', maxFee: '₹30,000' },
+    { title: 'Full Stack Development using MERN', duration: '60 to 70 Hours (2/3/4/6/8/9/10/11/12 Weeks)', students: '2.5k+', icon: Code, price: '₹18,500', maxFee: '₹32,000' },
+    { title: 'Data Science & AI', duration: '60 to 70 Hours (2/3/4/6/8/9/10/11/12 Weeks)', students: '1.8k+', icon: TrendingUp, price: '₹21,000', maxFee: '₹38,000' },
+    { title: 'Mobile App Development', duration: '60 to 70 Hours (2/3/4/6/8/9/10/11/12 Weeks)', students: '1.5k+', icon: Code, price: '₹17,000', maxFee: '₹30,000' },
+    { title: 'DevOps & Cloud', duration: '60 to 70 Hours (2/3/4/6/8/9/10/11/12 Weeks)', students: '1.2k+', icon: Briefcase, price: '₹18,500', maxFee: '₹32,000' },
   ];
 
-  const bridgeCourses = [
-    { title: 'HTML & CSS Fundamentals (Responsive Design) ', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '3.2k+', icon: Code, price: '₹3,500', maxFee: '₹6,000' },
-    { title: 'Full Stack Development using Laravel with MySQL', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '2.8k+', icon: Code, price: '₹4,200', maxFee: '₹7,000' },
-    { title: 'Python Programming Foundation', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '3.0k+', icon: Code, price: '₹4,500', maxFee: '₹7,500' },
-    { title: 'Full Stack Development using MERN', duration: '10 to 15 Hours (1/2 Weeks)', students: '2.2k+', icon: Code, price: '₹3,000', maxFee: '₹8,000' },
-    { title: 'Git & GitHub Essentials', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '2.5k+', icon: TrendingUp, price: '₹2,800', maxFee: '₹6,000' },
-    { title: 'UI/UX Design Introduction', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '2.0k+', icon: Briefcase, price: '₹5,200', maxFee: '₹9,000' },
-  ];
+
 
   const bridgeAdvantages = [
     'Perfect for Beginners',
@@ -78,7 +80,7 @@ const CoursesSection = () => {
         </div>
 
 
-       {/* Tab Navigation */}
+        {/* Tab Navigation */}
         <div className="flex justify-center mb-12">
           <div className="bg-white rounded-2xl p-2 shadow-lg w-full max-w-3xl">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
@@ -117,7 +119,7 @@ const CoursesSection = () => {
         </div>
 
 
-        
+
         {/* Advantages/Features Banner */}
         <div className="bg-white rounded-2xl p-8 shadow-lg mb-12">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
