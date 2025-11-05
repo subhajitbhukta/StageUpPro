@@ -201,12 +201,12 @@ const HeroSection = ({ onEnrollClick, scrollToSection }) => {
       <section className="py-3 bg-gradient-to-br from-slate-200 via-slate-400 to-slate-200 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.05),transparent_50%)]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-16">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-16">
             {certifications.map((cert, idx) => (
-              <div key={idx} className="flex flex-col items-center  group">
+              <div key={idx} className="flex flex-col items-center group">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full blur-xl opacity-0 group-hover:opacity-30 transition-all duration-500"></div>
-                  <div className="w-16 h-16 overflow-hidden  rounded-full bg-gradient-to-br from-white to-gray-100 border border-white/20 hover:border-white/40 transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-blue-500/20 relative transform group-hover:scale-110 group-hover:-translate-y-1">
+                  <div className="sm:w-16 sm:h-16 h-10 w-10 overflow-hidden  rounded-full bg-gradient-to-br from-white to-gray-100 border border-white/20 hover:border-white/40 transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-blue-500/20 relative transform group-hover:scale-110 group-hover:-translate-y-1">
                     <img 
                       src={cert.image} 
                       alt={cert.alt} 
@@ -215,7 +215,7 @@ const HeroSection = ({ onEnrollClick, scrollToSection }) => {
                     />
                   </div>
                 </div>
-                <span className="text-xs md:text-sm font-bold text-white group-hover:text-white text-center transition-colors duration-300">
+                <span className="text-[9px] md:text-sm font-bold text-white group-hover:text-white text-center transition-colors duration-300">
                   <i>{cert.title}</i></span>
               </div>
             ))}

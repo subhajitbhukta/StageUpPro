@@ -27,8 +27,8 @@ const CoursesSection = () => {
     { title: 'HTML & CSS Fundamentals (Responsive Design) ', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '3.2k+', icon: Code, price: '₹3,500', maxFee: '₹6,000' },
     { title: 'Full Stack Development using Laravel with MySQL', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '2.8k+', icon: Code, price: '₹4,200', maxFee: '₹7,000' },
     { title: 'Python Programming Foundation', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '3.0k+', icon: Code, price: '₹4,500', maxFee: '₹7,500' },
-    { title: 'Full Stack Development using MERN', duration: '10 to 15 Hours (1/2 Weeks)', students: '2.2k+', icon: Code, price: '₹3,000', maxFee: '₹5,000' },
-    { title: 'Git & GitHub Essentials', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '2.5k+', icon: TrendingUp, price: '₹4,800', maxFee: '₹8,000' },
+    { title: 'Full Stack Development using MERN', duration: '10 to 15 Hours (1/2 Weeks)', students: '2.2k+', icon: Code, price: '₹3,000', maxFee: '₹8,000' },
+    { title: 'Git & GitHub Essentials', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '2.5k+', icon: TrendingUp, price: '₹2,800', maxFee: '₹6,000' },
     { title: 'UI/UX Design Introduction', duration: '15 to 20 Hours (1/2/3 Weeks)', students: '2.0k+', icon: Briefcase, price: '₹5,200', maxFee: '₹9,000' },
   ];
 
@@ -77,47 +77,51 @@ const CoursesSection = () => {
           <p className="text-xl text-gray-600">Industry-aligned curriculum designed by experts</p>
         </div>
 
-        {/* Tab Navigation */}
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex bg-white rounded-2xl p-2 shadow-lg flex-wrap gap-2">
-            <button
-              onClick={() => setActiveTab('bridge')}
-              className={`flex items-center gap-2 px-6 py-4 rounded-xl font-semibold transition-all ${activeTab === 'bridge'
-                ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md'
-                : 'text-gray-600 hover:text-gray-900'
-                }`}
-            >
-              <GraduationCap size={20} />
-              Bridge Courses
-            </button>
-            <button
-              onClick={() => setActiveTab('professional')}
-              className={`flex items-center gap-2 px-6 py-4 rounded-xl font-semibold transition-all ${activeTab === 'professional'
-                ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md'
-                : 'text-gray-600 hover:text-gray-900'
-                }`}
-            >
-              <User size={20} />
-              For Professionals
-            </button>
-            <button
-              onClick={() => setActiveTab('industrial')}
-              className={`flex items-center gap-2 px-6 py-4 rounded-xl font-semibold transition-all ${activeTab === 'industrial'
-                ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md'
-                : 'text-gray-600 hover:text-gray-900'
-                }`}
-            >
-              <Building2 size={20} />
-              For Industries
-            </button>
 
+       {/* Tab Navigation */}
+        <div className="flex justify-center mb-12">
+          <div className="bg-white rounded-2xl p-2 shadow-lg w-full max-w-3xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <button
+                onClick={() => setActiveTab('bridge')}
+                className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold transition-all ${activeTab === 'bridge'
+                  ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md'
+                  : 'text-gray-600 hover:text-gray-900'
+                  }`}
+              >
+                <GraduationCap size={20} />
+                <span className="text-sm sm:text-base">Bridge Courses</span>
+              </button>
+              <button
+                onClick={() => setActiveTab('professional')}
+                className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold transition-all ${activeTab === 'professional'
+                  ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md'
+                  : 'text-gray-600 hover:text-gray-900'
+                  }`}
+              >
+                <User size={20} />
+                <span className="text-sm sm:text-base">For Professionals</span>
+              </button>
+              <button
+                onClick={() => setActiveTab('industrial')}
+                className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold transition-all ${activeTab === 'industrial'
+                  ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md'
+                  : 'text-gray-600 hover:text-gray-900'
+                  }`}
+              >
+                <Building2 size={20} />
+                <span className="text-sm sm:text-base">For Industries</span>
+              </button>
+            </div>
           </div>
         </div>
 
+
+        
         {/* Advantages/Features Banner */}
         <div className="bg-white rounded-2xl p-8 shadow-lg mb-12">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            {activeTab === 'professional' ? 'Professional Advantages' : 'Industrial Training Features'}
+            {activeTab === 'professional' ? 'Professional Advantages' : activeTab === 'industrial' ? 'Industrial Training Features' : 'Bridge Course Benefits'}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {benefits.map((benefit, idx) => (

@@ -23,8 +23,8 @@ const Footer = ({ scrollToSection }) => {
                     <div>
                       <h4 className="font-bold text-gray-900 mb-1">Visit Us</h4>
                       <p className="text-gray-700">StageUp</p>
-                      <p className="text-gray-700">Singur,Mankundu, West Bengal, India</p>
-                      <p className="text-gray-700">PIN: 712409 ,712139</p>
+                      <p className="text-gray-700">Mankundu, West Bengal, India</p>
+                      <p className="text-gray-700">PIN: 712139</p>
                     </div>
                   </div>
 
@@ -138,8 +138,8 @@ const Footer = ({ scrollToSection }) => {
               <h4 className="font-bold text-white mb-4">Contact</h4>
               <ul className="space-y-2 text-sm">
                 <li>Email:  letsstageupnow@gmail.com</li>
-                <li>Phone: +91 9681456344 / +91 9123378405</li>
-                <li>Location: Singur , Mankundu West Bengal, India</li>
+                <li>Phone: +91 9681456344 , +91 9123378405</li>
+                <li>Location: Mankundu West Bengal, India</li>
               </ul>
             </div>
           </div>
