@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Clock, ChevronRight, Code } from "lucide-react";
-import logo from '../assets/stageup_pro_logo.png'
+import logo from '../assets/darkstageup_pro_logo.png'
 // Footer Component
 const Footer = ({ scrollToSection }) => {
   return (
@@ -111,10 +111,10 @@ const Footer = ({ scrollToSection }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-3">
-                <img src={logo} alt="StageUp Pro" className="h-16 w-16 w-auto" />
+              <div className="flex items-center space-x-3 mb-3">
+                <img src={logo} alt="StageUp Pro" className="h-14" />
               </div>
-              <p className="text-sm">Empowering future developers with industry-leading education and certification.</p>
+              <p className="text-sm">Empowering future developers with industry - leading education and certification.</p>
             </div>
             <div>
               <h4 className="font-bold text-white mb-4">Quick Links</h4>

@@ -5,6 +5,7 @@ import { useState } from 'react';
 const CoursesSection = () => {
   const [activeTab, setActiveTab] = useState('bridge');
 
+  
   const bridgeCourses = [
     { title: 'HTML & CSS Fundamentals (Responsive Design) ', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '3.2k+', icon: Code, price: '₹3,500', maxFee: '₹6,000' },
     { title: 'Full Stack Development using Laravel with MySQL', duration: '25 to 30 Hours (1/2/3/4/5 Weeks)', students: '2.8k+', icon: Code, price: '₹4,200', maxFee: '₹7,000' },

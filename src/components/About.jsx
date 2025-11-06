@@ -40,7 +40,6 @@ const AboutSection = () => {
     { name: 'Abhijit Debnath', company: 'Web Skitters', logo: 'https://www.webskitters.com/wp-content/uploads/2025/02/WTS-LOGO-COLOR-01-3.png', package: '₹3.6 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' },
     { name: 'LakshmiKanta Patra', company: 'Vxplore Technologies', logo: 'https://www.topdevelopers.co/upload/20231205073153737598876.png', package: '₹4 LPA', image:img1 },
     { name: 'Medhashis Maity', company: 'Aarushi Infotech', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrid2HbRdLFlr6hP0hm1LjIag2BZddIaBUkQ&s', package: '₹3.6 LPA', image: img2 },
-    { name: 'User', company: 'Company', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Flipkart-logo.png', package: '₹4 LPA', image: 'https://cdn-icons-png.flaticon.com/512/6522/6522516.png' }
   ];
 
   return (
@@ -103,7 +102,7 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Recent Placements</h2>
             <p className="text-xl text-gray-600">See where our talented students are working now</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {placements.map((placement, idx) => (
               <div key={idx} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden border-2 border-gray-100">
                 <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 flex items-center justify-center h-24">
